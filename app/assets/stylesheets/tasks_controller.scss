@@ -1,0 +1,23 @@
+// Place all the styles related to the TasksController controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.list-tasks {
+  display: flex;
+  flex-direction: column;
+}
+#card {
+  align-items: center;
+  display: flex;
+  h3 {
+    margin-left: 10px;
+  }
+}
+.fa-check-circle {
+  font-size: 20px;
+}
+#green-check {
+  color: #4CE0B3;
+}
+#transparent-check {
+  color: rgba(0, 0, 0, 0.2);
+}

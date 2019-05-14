@@ -1,0 +1,13 @@
+<div class="list-tasks">
+  <h2>Your tasks:</h2>
+  <% @tasks.each do |task| %>
+  <div id="card">
+    <%if task.completed == true %>
+      <i class="fas fa-check-circle" id="green-check"></i>
+    <% else %>
+      <i class="fas fa-check-circle" id="transparent-check"></i>
+    <% end  %>
+    <h3><%= task.title %></h3>
+  </div>
+  <% end %>
+</div>
