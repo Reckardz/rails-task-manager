@@ -9,5 +9,8 @@
     <% end  %>
   </div>
   <p><%= link_to "Edit this task", edit_path %></p>
+  <p><%= link_to "Delete this task", task_path(@task),
+        method: :delete,
+        data: { confirm: "Are you sure?" } %></p>
   <p><%= link_to "Go back to your task list", tasks_path %></p>
 </div>

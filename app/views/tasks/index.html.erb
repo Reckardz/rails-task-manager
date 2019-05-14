@@ -8,6 +8,9 @@
       <i class="fas fa-check-circle" id="transparent-check"></i>
     <% end  %>
     <h3><%= link_to task.title, task_path(task) %></h3>
+    <p><%= link_to "Delete", task_path(task),
+          method: :delete,
+          data: { confirm: "Are you sure?" } %></p>
   </div>
   <% end %>
   <p><%= link_to "+ add a new task", new_task_path %></p>
