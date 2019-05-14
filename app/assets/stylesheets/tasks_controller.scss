@@ -9,7 +9,12 @@
   align-items: center;
   display: flex;
   h3 {
+    padding: 10px;
+    border-radius: 5px;
     margin-left: 10px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 }
 .fa-check-circle {
@@ -20,4 +25,26 @@
 }
 #transparent-check {
   color: rgba(0, 0, 0, 0.2);
+}
+#one-task {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+#details {
+  p {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #AEDCC0;
+  }
+  #green-check {
+    font-size: 30px;
+    color: #4CE0B3;
+    margin: 10px 0;
+  }
+  #transparent-check {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+  }
 }

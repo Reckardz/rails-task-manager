@@ -1,0 +1,13 @@
+<div id="one-task">
+  <h2><%= @task.title %></h2>
+  <div id="details">
+    <p><%= @task.details %></p>
+    <%if @task.completed == true %>
+      <i class="fas fa-check-circle" id="green-check"></i>
+    <% else %>
+      <i class="fas fa-check-circle" id="transparent-check"></i>
+    <% end  %>
+  </div>
+  <p><%= link_to "Edit this task", edit_path %></p>
+  <p><%= link_to "Go back to your task list", tasks_path %></p>
+</div>
